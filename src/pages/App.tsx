@@ -2,7 +2,6 @@ import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
-import VersionBar from '../components/VersionBar'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
@@ -13,7 +12,7 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import Swap from './Swap'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
-import { EN, allLanguages } from '../constants/localisation/languageCodes'
+import { ZHCN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
@@ -35,6 +34,7 @@ const BodyWrapper = styled.div`
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+
   z-index: 1;
   justify-content: center;
   // background-image: url('/images/group-pancake.svg');
@@ -52,7 +52,10 @@ const BodyWrapper = styled.div`
     // background-repeat: no-repeat;
     // background-position: center 420px, 10% 230px, 90% 230px;
     // background-size: contain, 266px, 266px;
-    min-height: 90vh;
+    min-height: calc(100vh - 64px);
+    background: url(../images/background-logo.svg), #16182D;
+    background-position: center;
+    background-size: cover, cover;
   }
 `
 
@@ -64,8 +67,8 @@ export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<any>(undefined)
   const [translatedLanguage, setTranslatedLanguage] = useState<any>(undefined)
   const [translations, setTranslations] = useState<Array<any>>([])
-  const apiKey = `${process.env.REACT_APP_CROWDIN_APIKEY}`
-  const projectId = parseInt(`${process.env.REACT_APP_CROWDIN_PROJECTID}`)
+  const apiKey = `2a1830af8eaacea815d1aeeec083828c`
+  const projectId = 457774
   const fileId = 6
 
   const credentials: Credentials = {
@@ -86,7 +89,7 @@ export default function App() {
       const storedLang = getStoredLang(storedLangCode)
       setSelectedLanguage(storedLang)
     } else {
-      setSelectedLanguage(EN)
+      setSelectedLanguage(ZHCN)
     }
   }, [])
 
@@ -144,7 +147,7 @@ export default function App() {
                   <Marginer />
                 </BodyWrapper>
               </Menu>
-              <VersionBar />
+
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>

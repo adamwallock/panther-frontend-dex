@@ -1,10 +1,12 @@
-import { MenuEntry } from '@pantherswap-libs/uikit'
+import { MenuEntry } from 'uikit-pixiu'
+
+
 
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pantherswap.com/',
+    href: 'http://localhost:5000/#/',
   },
   {
     label: 'Trade',
@@ -19,69 +21,21 @@ const config: MenuEntry[] = [
         label: 'Liquidity',
         href: '/pool',
       },
-      {
-        label: 'LP Migration',
-        href: 'https://docs.pantherswap.com/amm-launch',
-      },
+ 
     ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pantherswap.com/farms',
+    href: 'http://localhost:5000/#/farms',
   },
-  {
-    label: 'Pools',
-    icon: 'PoolIcon',
-    href: 'https://pantherswap.com/pools',
-  },
-  {
-    label: 'Jungles',
-    icon: 'JungleIcon',
-    href: 'https://pantherswap.com/jungles',
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pantherswap.com/lottery',
-  },
-  {
-    label: 'IPO',
-    icon: 'IfoIcon',
-    href: 'https://pantherswap.com/ipo',
-  },
+
   {
     label: 'Referrals',
     icon: 'ReferralIcon',
-    href: 'https://pantherswap.com/referrals',
+    href: 'http://localhost:5000/#/referrals',
   },
-  {
-    label: 'Audits',
-    icon: 'ShieldIcon',
-    href: 'https://docs.pantherswap.com/security/audits',
-  },
-  {
-    label: 'Features',
-    icon: 'FeatureIcon',
-    items: [
-      {
-        label: 'Automatic LP',
-        href: 'https://docs.pantherswap.com/tokenomics/automatic-liquidity',
-      },
-      {
-        label: 'Automatic Burning',
-        href: 'https://docs.pantherswap.com/tokenomics/automatic-burning',
-      },
-      {
-        label: 'Harvest Lockup',
-        href: 'https://docs.pantherswap.com/tokenomics/harvest-lockup',
-      },
-      {
-        label: 'Anti-Whale',
-        href: 'https://docs.pantherswap.com/tokenomics/anti-whale',
-      },
-    ],
-  },
+
   // {
   //   label: 'Price Charts',
   //   icon: 'ChartIcon',
@@ -120,17 +74,33 @@ const config: MenuEntry[] = [
         label: 'CoinGecko',
         href: 'https://www.coingecko.com/en/coins/pantherswap',
       },
+  
+    ],
+  },
+  {
+    label: 'Docs',
+    icon: 'GitbookIcon',
+    href: 'http://localhost:5000/#/docs',
+  },
+  {
+    label: 'Community',
+    icon: 'GroupsIcon',
+    items: [
       {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/pantherswap/',
+        label: 'Telegram',
+        href: '/',
       },
       {
-        label: 'LiveCoinWatch',
-        href: 'https://www.livecoinwatch.com/price/PantherSwap-PANTHER',
+        label: 'Twitter',
+        href: '/',
       },
       {
-        label: 'Vfat',
-        href: 'https://vfat.tools/bsc/panther',
+        label: 'Reddit',
+        href: '/',
+      },
+      {
+        label: 'Medium',
+        href: '/',
       },
     ],
   },
@@ -158,63 +128,13 @@ const config: MenuEntry[] = [
   //     },
   //   ],
   // },
-  {
-    label: 'Analytics',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://pantherswap.info',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://pantherswap.info/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://pantherswap.info/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://pantherswap.info/accounts',
-      },
-    ],
-  },
+ 
   // {
   //   label: 'IFO',
   //   icon: 'IfoIcon',
   //   href: 'https://pancakeswap.finance/ifo',
   // },
-  {
-    label: 'More',
-    icon: 'MoreIcon',
-    items: [
-      // {
-      //   label: 'Voting',
-      //   href: 'https://voting.pancakeswap.finance',
-      // },
-      {
-        label: 'Github',
-        href: 'https://github.com/pantherswap',
-      },
-      {
-        label: 'Docs',
-        href: 'https://docs.pantherswap.com',
-      },
-      {
-        label: 'Roadmap',
-        href: 'https://docs.pantherswap.com/roadmap',
-      },
-      {
-        label: 'Blog',
-        href: 'https://pantherswap.medium.com',
-      },
-      {
-        label: 'Voting',
-        href: 'https://voting.pantherswap.com/',
-      },
-    ],
-  },
+  
 ]
 
 export default config

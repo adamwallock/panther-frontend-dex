@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import { Currency, Pair } from '@pantherswap-libs/sdk'
-import { Button, ChevronDownIcon, Text } from '@pantherswap-libs/uikit'
+import { Button, ChevronDownIcon, Text } from 'uikit-pixiu'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import { useCurrencyBalance } from '../../state/wallet/hooks'
@@ -26,7 +26,7 @@ const CurrencySelect = styled.button<{ selected: boolean }>`
   font-size: 16px;
   font-weight: 500;
   background-color: transparent;
-  color: ${({ selected, theme }) => (selected ? theme.colors.text : '#FFFFFF')};
+  color: #202135;
   border-radius: 12px;
   outline: none;
   cursor: pointer;
@@ -34,10 +34,7 @@ const CurrencySelect = styled.button<{ selected: boolean }>`
   border: none;
   padding: 0 0.5rem;
 
-  :focus,
-  :hover {
-    background-color: ${({ theme }) => darken(0.05, theme.colors.input)};
-  }
+
 `
 
 const LabelRow = styled.div`
@@ -65,16 +62,19 @@ const InputPanel = styled.div<{ hideInput?: boolean }>`
   flex-flow: column nowrap;
   position: relative;
   border-radius: ${({ hideInput }) => (hideInput ? '8px' : '20px')};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #202135;
   z-index: 1;
 `
 
 const Container = styled.div<{ hideInput: boolean }>`
   border-radius: 16px;
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color:#202135;
   box-shadow: ${({ theme }) => theme.shadows.inset};
 `
 
+const customButton={
+  color: "#F31E58"
+}
 interface CurrencyInputPanelProps {
   value: string
   onUserInput: (value: string) => void
@@ -145,7 +145,7 @@ export default function CurrencyInputPanel({
               />
               {account && currency && showMaxButton && label !== 'To' && (
                 <Button onClick={onMax} size="sm" variant="text">
-                  MAX
+                  <p style={customButton} >Max</p>
                 </Button>
               )}
             </>

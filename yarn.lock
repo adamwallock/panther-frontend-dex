@@ -17102,6 +17102,17 @@ pirates@^4.0.1:
   dependencies:
     node-modules-regexp "^1.0.0"
 
+pixiu-kit@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/pixiu-kit/-/pixiu-kit-1.0.2.tgz#019fc63da66bd4e2f8cfd635cf00e3fa6b55f535"
+  integrity sha512-e35GQHjOjk85kh6AnCcPCUyzABPa8Q+bPSNM8MGfXbjmuRoNjvElSXns7sE/uGZ0XaR/53qAdwT+DqMt+hUJCw==
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
+
 pkg-conf@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/pkg-conf/-/pkg-conf-1.1.3.tgz#378e56d6fd13e88bfb6f4a25df7a83faabddba5b"
@@ -21821,6 +21832,17 @@ ua-parser-js@^0.7.23:
   version "0.7.23"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.23.tgz#704d67f951e13195fbcd3d78818577f5bc1d547b"
   integrity sha512-m4hvMLxgGHXG3O3fQVAyyAQpZzDOvwnhOTjYz5Xmr7r/+LpkNy3vJXdVRWgd1TkAb7NGROZuSy96CrlNVjA7KA==
+
+uikit-pixiu@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/uikit-pixiu/-/uikit-pixiu-1.2.6.tgz#f399ef289c30369031a4bc691b2a6bef0202b2bd"
+  integrity sha512-hWUzurGKX+oHQQWPqvXcq6IRH0oC9byYOuHIkMUPHSQoY4PSRzHvpRvAwChL7iqJIrboOoqYF891og9munAbQA==
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 uint8arrays@1.1.0, uint8arrays@^1.0.0, uint8arrays@^1.1.0:
   version "1.1.0"

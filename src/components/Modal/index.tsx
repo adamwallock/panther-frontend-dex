@@ -18,7 +18,7 @@ const StyledDialogOverlay = styled(AnimatedDialogOverlay)`
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(255, 114, 13, 0.2);
+    background-color: transparent;
   }
 `
 
