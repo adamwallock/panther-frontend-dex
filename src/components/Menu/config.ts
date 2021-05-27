@@ -27,7 +27,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'http://localhost:5000/#/farms',
+    href: 'http://localhost:3001/farms',
   },
 
   {
